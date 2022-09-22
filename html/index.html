@@ -19,16 +19,24 @@
     <div id="new-trackers">
         <h2 id="add-new-item-title"> Add A new item :</h2>
         <form id="new-form">
-            <label class="name-lable">
-                Name: <input type="text" id="name-text" required placeholder="Whare was the expense made ?">
-            </label>
-            <label class="date-lable">
-                Date: <input type="date" id="date-text" required placeholder="mm/dd/yyyy">
-            </label>
-            <label class="amount-lable">
-                Amount: <input type="number" id="amount-text" value="Add Expense" required>
-            </label>
-            <input type="submit" id="add-expense-btn">
+            <div class="add-name-model">
+                <label class="name-lable">Name: </label>
+                <input type="text" id="name-text" required placeholder="Whare was the expense made ?">
+            </div>
+
+            <div class="data-amount-box">
+                <label class="date-lable"> Date: </label>
+                <input type="date" id="date-text" class="box-text" required>
+
+                <label class="amount-lable"> Amount: </label>
+                <input type="number" id="amount-text" class="box-text" required>
+
+
+            </div>
+            <div class="btn">
+                <input type="submit" id="add-expense-btn" value="Add Expense">
+
+            </div>
 
         </form>
     </div>
@@ -40,20 +48,25 @@
             <div id="table-row">
                 <table>
                     <tr>
-                        <td>Name</td>
-                        <td>Date</td>
-                        <td>Amount</td>
-                        <td> </td>
+                        <th class="name-row">Name</th>
+                        <th class="data-row">Date</th>
+                        <th class="amount-row">Amount</th>
+                        <th class="delate-row"> </th>
                     </tr>
                     <tr>
                         <div id="items">
                             <td>ahemd</td>
                             <td>22/32/2022</td>
                             <td>2000</td>
-                            <td><input type="button" id="delete-btn" value="delete"> </td>
+                            <td><button id="delete-btn">delete</button> </td>
 
                         </div>
                     </tr>
+                    <tr >
+                        
+                       <td class="nothing-box" colspan="4" >sdsd</td>
+                    </tr>
+                    
                 </table>
             </div>
 

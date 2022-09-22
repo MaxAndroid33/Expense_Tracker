@@ -1,0 +1,186 @@
+:root {
+
+    --greenTitle: #038d33;
+    --greenBtn: #07731b93;
+    --fontlable:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Fira sans', sans-serif';
+
+}
+
+body {
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.expense-title {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+#new-trackers #add-new-item-title {
+    color: var(--greenTitle);
+    text-align: center;
+    padding: 20px 2px 10px 4px ;
+    font-weight: 700;
+    font-style: normal;
+    fill: #038d33;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#new-form{
+    
+    padding-top: 10px;
+}
+
+input,button{
+
+    appearance: none;
+    
+    outline: none;
+    background: none;
+
+
+}
+.add-name-model{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+label{
+    
+    font-family: var(--fontlable);
+    font-weight: bold;
+    
+}
+#name-text{
+    
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border-color: #f2f2d2;
+    border-width: 1px;
+    margin-left: 16px;
+    width:100%;
+    margin-left: 10px;
+    
+    
+}
+.data-amount-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.box-text{
+   
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    border-color: #f2f2d2;
+    border-width: 1px;
+    margin-left: 13px;
+    width:100%;
+    
+}
+#date-text{
+    margin-right: 12px;
+    margin-left: 19px;
+}
+#amount-text{
+    width: 100%;
+}
+.btn{
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 30px;
+    
+}
+#add-expense-btn{
+    padding: 12px;
+    background-color: #038d33;
+    color: #f2f2d2;
+    border-style: hidden;
+    border-radius: 3px;
+    
+}
+#add-expense-btn:hover{
+   background-color: green;
+}
+#table-row{
+    display: flex;
+    flex-direction: row;
+ }
+
+.item-list{
+    
+    padding-top: 20px;
+    
+}
+table, tr, th {
+    
+    border: 1px solid ;
+    border-collapse: collapse;
+    border-color: #a1b2b2;
+    padding: 10px;
+    text-align: left;
+    
+    
+  }
+  table, tr, td {
+    
+    border: 1px solid ;
+    border-color: #a1b2b2;
+    padding: 10px;
+    
+    
+  }
+  table{
+    width:100%;
+    
+  }
+  
+  .name-row{
+    width: 40%;
+  }
+  .data-row{
+    width: 15%;
+  }
+  .delate-row{
+    width: 10%;
+    text-align: center;
+  }
+
+  .nothing-box {
+   background-color: rgb(192, 191, 191);
+  }
+#delete-btn{
+    margin:0 auto;
+    padding: 9px;
+    margin-left: 12px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    color: brown;
+}
+
+#delete-btn:hover{
+    background-color: red;
+}
