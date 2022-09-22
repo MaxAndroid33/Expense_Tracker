@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<header>Expense Tracker </header>
+
+
 <body>
-    
+
+    <div id="card-name">
+        <h1 class="expense-title">Expense Tracker</h1>
+    </div>
+    <div id="new-trackers">
+        <h2 id="add-new-item-title"> Add A new item :</h2>
+        <form id="new-form">
+            <label class="name-lable">
+                Name: <input type="text" id="name-text" required placeholder="Whare was the expense made ?">
+            </label>
+            <label class="date-lable">
+                Date: <input type="date" id="date-text" required placeholder="mm/dd/yyyy">
+            </label>
+            <label class="amount-lable">
+                Amount: <input type="number" id="amount-text" value="Add Expense" required>
+            </label>
+            <input type="submit" id="add-expense-btn">
+
+        </form>
+    </div>
+
+    <main>
+
+        <section class="item-list">
+
+            <div id="table-row">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Date</td>
+                        <td>Amount</td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <div id="items">
+                            <td>ahemd</td>
+                            <td>22/32/2022</td>
+                            <td>2000</td>
+                            <td><input type="button" id="delete-btn" value="delete"> </td>
+
+                        </div>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+    </main>
 </body>
+
 </html>
